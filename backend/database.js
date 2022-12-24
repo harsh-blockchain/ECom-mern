@@ -9,7 +9,9 @@ const connectDatabase = () => {
       useUnifiedTopology: true,
     })
     .then((data) => {
-      console.log("Database connected successfully : {data.connection.host}");
+      console.log(
+        "Database connected successfully : `${data.connection.host}`"
+      );
     });
 };
 
